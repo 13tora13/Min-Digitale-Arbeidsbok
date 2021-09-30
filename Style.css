@@ -1,0 +1,91 @@
+*{
+  
+  margin:0;
+
+}
+
+
+body {
+    background-color: rgb(13, 51, 32);
+    margin:0;
+  }
+
+/* Setter opp grids, definerer avstand, størelse, layout */
+  .grid-container {
+    display: grid;
+    grid-template-areas: "top-left top-right" "footer footer";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    margin: 2ch;
+    grid-gap:2ch;
+  }
+
+
+/* definerer mer spesifikt hver enkelt grid, farge osv */
+.grid-item1 {
+  border-style: groove;
+  grid-area: top-left;
+  background-color: rgb(157, 82, 228);
+}
+.grid-item2 {
+  border-style: groove;
+  grid-area: top-right;
+  background-color: rgb(157, 82, 228);
+}
+
+.foot {
+  grid-area: footer;
+}
+    
+.header h1{
+
+  padding-top:25px;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+
+    position:absolute;
+    background-color:rgb(143, 96, 143);
+    display: grid;
+    grid-column: span1;
+    width:100%;
+    height: 100px;
+  }
+
+  h1{
+
+    padding-left: 40px;
+  }
+
+  article{
+display: block;
+    width:100%;
+    height:800px;
+    top: auto;
+    background-color: rgb(82, 174, 236);
+
+
+  }
+  
+
+  footer{
+
+    width:100%;
+    height:100px;
+    background-color: aqua;
+
+  }
+
+  footer p{
+
+text-align: center;
+
+  }
+ 
